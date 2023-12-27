@@ -37,8 +37,8 @@ function Intro() {
       >
         <span className="font-bold">Hello, I'm Purit.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> studying CS at{" "}
-        <span className="font-bold">Cornell</span>. I enjoy building software
-        that helps real <span className="italic">people</span>.
+        <span className="font-bold">Cornell</span>. I enjoy building software to
+        help real <span className="italic">people</span>.
       </motion.h1>
 
       <motion.div
@@ -66,7 +66,7 @@ function Intro() {
           href="/resume.pdf"
           download
         >
-          Download CV <HiDownload className="opacity-60" />
+          Resume <HiDownload className="opacity-60" />
         </a>
 
         <a
