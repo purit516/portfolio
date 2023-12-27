@@ -61,27 +61,29 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
-  // {
-  //   title: "CorpComment",
-  //   description:
-  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  //   imageUrl: corpcommentImg,
-  // },
-  // {
-  //   title: "rmtDev",
-  //   description:
-  //     "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  //   tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  //   imageUrl: rmtdevImg,
-  // },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: wordanalyticsImg,
-  // },
+  {
+    title: "Imaging Ground Server",
+    description: "A web app built for CUAir's unmanned aircraft that handles image transmission, geolocation, tagging, and storage. Spearheaded a frontend redesign to increase tagging efficiency. Developed APIs to send information and commands across systems.",
+    tags: ["Spring Boot", "React", "Redux", "PostgreSQL"],
+  },
+  
+  {
+    title: "UniPantry",
+    description:
+      "A social media recipe sharing application aimed at providing healthy and accessible meal options for college students.",
+    tags: ["React Native", "Express.js", "Node.js", "CSS", "Google Firebase"],
+  },
+  {
+    title: "2 Peas in a Pod",
+    description: "A podcast recommendation platform for you and your best friend. The app generates a curated list of podcasts based on the preferences of two individuals. Utilizes information retrieval concepts such as TF-IDF vectors, cosine similarity, and Rocchio's algorithm. Final project for Cornell CS 4300: Language and Information.",
+    tags: ["React", "Flask", "NumPy", "Pandas", "Scikit-learn", "MySQL", "Docker"]
+  },
+  {
+    title: "OCaml Twitter",
+    description:
+      "A Twitter-like messaging board implemented using functional programming through a command line interface. Includes a main feed, trending page, user profiles, interactions, and search functionality.",
+    tags: ["OCaml"],
+  },
 ] as const;
 
 export const skillsData = [
