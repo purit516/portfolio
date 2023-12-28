@@ -1,17 +1,19 @@
 "use client";
 import React from "react";
+import SectionHeader from "./SectionHeader";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SectionHeader from "./SectionHeader";
 import { experiencesData } from "@/lib/data";
 
 export default function Experiences() {
+  console.log(experiencesData);
+
   return (
     <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeader>Experiences</SectionHeader>
+      <SectionHeader>My experience</SectionHeader>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -32,9 +34,10 @@ export default function Experiences() {
                 background: "white",
                 fontSize: "1.5rem",
               }}
+              visible={true}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <h3 className="font-semibold capitalize">{item.organization}</h3>
+              <p className="font-normal !mt-0">{item.title}</p>
               <p className="!mt-1 !font-normal text-gray-700">
                 {item.description}
               </p>

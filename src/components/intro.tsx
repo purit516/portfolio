@@ -38,7 +38,7 @@ function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Purit.</span> I'm a{" "}
+        <span className="font-bold">Hello, I&apos;m Purit.</span> I&apos;m a{" "}
         <span className="font-bold">full-stack developer</span> studying CS at{" "}
         <span className="font-bold">Cornell</span>. I enjoy building software
         that helps real <span className="italic">people</span>.
