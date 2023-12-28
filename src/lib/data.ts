@@ -2,9 +2,17 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap, LuPlane, LuSchool } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
+import twopeas from "../../public/2peas.png"
+import cuair from "../../public/gs-frontend.png"
+import pantry from "../../public/pantry.png"
+import tourable from "../../public/tourable.png"
+import ocaml from "../../public/ocaml.png"
+
+
+
 // import rmtdevImg from "@/public/rmtdev.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
+
 
 export const links = [
   {
@@ -39,7 +47,7 @@ export const experiencesData = [
     title: "Student",
     location: "Ithaca, NY",
     description:
-      "Pursuing a B.A. and M.Eng in Computer Science",
+      "Pursuing a B.A. and M.Eng in Computer Science. Meinig Scholar.",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2021 - May 2025",
   },
@@ -101,32 +109,44 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Imaging Ground Server",
-    description: "A web app built for CUAir's unmanned aircraft that handles image transmission, geolocation, tagging, and storage. Spearheaded a frontend redesign to increase tagging efficiency. Developed APIs to send information and commands across systems.",
-    tags: ["Spring Boot", "React", "Redux", "PostgreSQL", "Docker"],
-  },
-  {
     title: "2 Peas in a Pod",
-    description: "A podcast recommendation platform for you and your best friend. Utilizes information retrieval techniques to generate a curated list of podcasts based on the preferences of two individuals.",
-    tags: ["React", "Flask", "NumPy", "Pandas", "Scikit-learn", "MySQL", "Docker"]
+    description: "A podcast recommendation platform for you and your best friend. Utilizes information retrieval techniques to generate a curated list of podcasts based on the preferences of two users.",
+    tags: ["React", "Flask", "NumPy", "Pandas", "Scikit-learn", "MySQL", "Docker"],
+    imageUrl: twopeas,
+    link: "https://github.com/wnguyen10/2-Peas-in-a-Pod"
   },
   {
-    title: "UniPantry",
-    description:
-      "A social media recipe sharing application aimed at providing healthy and accessible meal options for college students.",
-    tags: ["React Native", "Express.js", "Node.js", "CSS", "Google Firebase"],
+    title: "Imaging Ground Server",
+    description: "A web app built for CUAir's unmanned aircraft that handles image transmission, geolocation, tagging, and storage. Overhauled frontend tagging page and developed APIs on the backend.",
+    tags: ["Spring Boot", "React", "Redux", "PostgreSQL", "Docker"],
+    imageUrl: cuair,
+    link: "https://cuair.org/imaging-systems.html"
   },
   {
     title: "Tourable",
     description:
       "A virtual college tour platform built to give students the chance to experience life on college campuses, regardless of where they are in the world.",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS"],
+    imageUrl: tourable,
+    link: "https://www.landing.tourable.net"
+
+  },
+  {
+    title: "UniPantry",
+    description:
+      "A social media recipe sharing application aimed at providing healthy and accessible meal options for college students.",
+    tags: ["React Native", "Express.js", "Node.js", "CSS", "Google Firebase"],
+    imageUrl: pantry,
+    link: "https://business.cornell.edu/hub/2021/07/12/unipantry-helps-inexperienced-home-cooks-create-delicious-inexpensive-meals/"
+
   },
   {
     title: "OCaml Twitter",
     description:
       "A Twitter-like messaging board implemented using functional programming through a command line interface. Includes a main feed, trending page, user profiles, interactions, and search functionality.",
     tags: ["OCaml"],
+    imageUrl: ocaml,
+    link: "https://github.com/dan-ieljin/twitter-clone"
   },
 ] as const;
 
